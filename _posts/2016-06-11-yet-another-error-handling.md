@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "C++: Yet Another Kind of error handling"
+title:      "C++: Yet Another Kind of error handling (Part 1)"
 subtitle:   "Self document your code and let users decide how to handle error"
 date:       2016-06-11 10:12:34
 author:     "Nicolas DI PRIMA"
@@ -107,3 +107,10 @@ println!("{}", txt);
 readFile("document.txt")
   .and_then(|txt| println!("{}", txt));
 {% endhighlight %}
+
+# Conclusion
+
+Personally, I like these kind of APIs. They provide a typed error
+code and users have the choice to handle errors the way they want.
+I believe it should be possible to do the same in C++.
+In a second post, I will try to implement a **Rust** like *Result* in C++11.
